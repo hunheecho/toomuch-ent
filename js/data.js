@@ -7,14 +7,9 @@
 const SITE = {
   nameKo: '(주)투머치엔터테이먼트',
   nameEn: 'TOO MUCH ENTERTAINMENT',
-  ceo: '대표자명',
-  bizNo: '000-00-00000',
-  regNo: '제0000-000000호', // 대중문화예술기획업 등록번호
-  tel: '010-0000-0000',
   email: 'gongtek@naver.com',
   profileEmail: 'gongtek@naver.com', // 모델·인플루언서 지원 접수 메일
   address: '서울 강남구 삼성동 107',
-  hours: '평일 10:00 – 19:00',
   instagram: '', // 주소를 넣으면 모바일 메뉴에 링크가 나타납니다
   blog: '',
 };

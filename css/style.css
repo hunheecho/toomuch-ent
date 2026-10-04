@@ -286,7 +286,6 @@ dialog::backdrop { background: rgba(0, 0, 0, .6); }
   font-size: 12px; font-weight: 800; line-height: 1.15; box-shadow: 0 6px 18px rgba(0, 0, 0, .18); transition: .2s;
 }
 .floating a:hover, .floating button:hover { translate: 0 -3px; }
-.f-tel { background: #fff; color: var(--ink); font-family: var(--en); }
 .f-ask { background: var(--accent); color: #fff; }
 .f-top { background: var(--ink); color: #fff; font-size: 18px !important; }
 
@@ -320,8 +319,7 @@ dialog::backdrop { background: rgba(0, 0, 0, .6); }
   .ft-in { grid-template-columns: 1fr; }
   .ft-info span { display: block; margin-left: 0; }
   .floating a, .floating button { width: 48px; height: 48px; font-size: 11px; }
-  .floating .f-tel { display: none; }
-}
+  .floating }
 @media (max-width: 480px) { .biz { grid-template-columns: 1fr; } .biz a, .biz article { min-height: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; translate: none; transition: none; }

@@ -67,16 +67,14 @@
           </div>
           <ul class="ft-nav">${NAV.map((n) => `<li><a href="${n.href}">${n.label}</a></li>`).join('')}</ul>
           <div class="ft-info">
-            <p>${SITE.nameKo} <span>대표자 ${SITE.ceo}</span></p>
-            <p>사업자등록번호 ${SITE.bizNo} <span>대중문화예술기획업 등록번호 ${SITE.regNo}</span></p>
-            <p>Tel <a href="tel:${SITE.tel}">${SITE.tel}</a> <span>E-mail <a href="mailto:${SITE.email}">${SITE.email}</a></span></p>
+            <p>${SITE.nameKo}</p>
+            <p>E-mail <a href="mailto:${SITE.email}">${SITE.email}</a></p>
             <p>주소 ${SITE.address}</p>
             <p class="copy">Copyright © ${new Date().getFullYear()} ${SITE.nameKo}. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
       <div class="floating">
-        <a href="tel:${SITE.tel}" class="f-tel" aria-label="전화 문의">CALL</a>
         <a href="contact.html" class="f-ask">섭외<br>문의</a>
         <button class="f-top" aria-label="맨 위로">↑</button>
       </div>`;
@@ -200,7 +198,7 @@
       $$('[data-site]').forEach((el) => {
         const k = el.dataset.site;
         el.textContent = SITE[k];
-        if (el.tagName === 'A') el.href = k === 'tel' ? `tel:${SITE.tel}` : `mailto:${SITE[k]}`;
+        if (el.tagName === 'A') el.href = `mailto:${SITE[k]}`;
       });
       $('#profileMail').href = `mailto:${SITE.profileEmail}?subject=${encodeURIComponent('[프로필 접수] 이름 / 분야')}`;
       const form = $('#askForm');
