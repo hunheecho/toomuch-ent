@@ -69,7 +69,7 @@ const WORK_CATS = { ad: '광고 · 화보', sns: 'SNS 캠페인', event: '팝업
    ------------------------------------------------------------ */
 // 분위기컷 파일명 규칙: images/{f|m|x(키즈)|i|w}-{영문 태그 소문자}.jpg
 const slug = (s) => s.toLowerCase().replace(/[^a-z]/g, '');
-const M = (g, c, name, en, age, use, featured) => ({ g, c, name, en, age, use, img: `images/${c === 'kids' ? 'x' : g}-${slug(en)}.jpg?v=6`, featured: !!featured });
+const M = (g, c, name, en, age, use, featured) => ({ g, c, name, en, age, use, img: `images/${c === 'kids' ? 'x' : g}-${slug(en)}.jpg?v=7`, featured: !!featured });
 const MODELS = [
   M('f', 'domestic', '뷰티 · 스킨케어', 'BEAUTY', '20–30대', '화장품 광고, 상세페이지, 뷰티 화보', 1),
   M('f', 'domestic', '패션 · 룩북', 'FASHION', '20–30대', '시즌 룩북, 브랜드 화보, 캠페인', 1),
@@ -105,7 +105,7 @@ const MODELS = [
    인플루언서 라인업 (분야별)
    { name, en, p:'instagram'|'youtube'|'tiktok', scale, content, img }
    ------------------------------------------------------------ */
-const I = (p, name, en, scale, content) => ({ p, name, en, scale, content, img: `images/i-${slug(en)}.jpg?v=2` });
+const I = (p, name, en, scale, content) => ({ p, name, en, scale, content, img: `images/i-${slug(en)}.jpg?v=3` });
 const INFLUENCERS = [
   I('instagram', '패션 · 데일리룩', 'FASHION', '나노 – 매크로', '피드 · 릴스 · 스토리'),
   I('instagram', '뷰티 · 메이크업', 'BEAUTY', '나노 – 매크로', '리뷰 · 튜토리얼 릴스'),
@@ -124,7 +124,7 @@ const INFLUENCERS = [
    실제 진행 사례가 생기면 title 에 프로젝트명, desc 에 '클라이언트 · 연도', img 에 사진을 넣으세요.
    { title, en, cat:'ad'|'sns'|'event'|'video', desc, img }
    ------------------------------------------------------------ */
-const W = (cat, title, en, desc) => ({ cat, title, en, desc, img: `images/w-${slug(en)}.jpg?v=2` });
+const W = (cat, title, en, desc) => ({ cat, title, en, desc, img: `images/w-${slug(en)}.jpg?v=3` });
 const WORKS = [
   W('ad', '브랜드 시즌 화보', 'EDITORIAL', '모델 캐스팅 · 스튜디오 촬영'),
   W('sns', '신제품 SNS 캠페인', 'CAMPAIGN', '인플루언서 매칭 · 콘텐츠 운영'),

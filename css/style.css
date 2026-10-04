@@ -111,7 +111,7 @@ h2.title { font-size: clamp(28px, 4vw, 48px); font-weight: 800; line-height: 1.2
 .ph em { font-family: var(--en); font-style: normal; font-weight: 900; font-stretch: 115%; font-size: clamp(18px, 2vw, 26px); letter-spacing: .02em; line-height: 1.05; text-align: center; padding: 0 12px; color: rgba(255, 255, 255, .85); }
 
 /* ---------- home hero ---------- */
-.hero { background: linear-gradient(90deg, rgba(18, 18, 18, .88) 0%, rgba(18, 18, 18, .55) 55%, rgba(18, 18, 18, .25) 100%), linear-gradient(0deg, #121212 0%, rgba(18, 18, 18, 0) 30%), url('../images/hero.jpg?v=2') center / cover #121212; color: #fff; margin-top: calc(var(--hd) * -1); padding: calc(var(--hd) + clamp(56px, 9vw, 120px)) 0 0; overflow: hidden; }
+.hero { background: linear-gradient(90deg, rgba(18, 18, 18, .88) 0%, rgba(18, 18, 18, .55) 55%, rgba(18, 18, 18, .25) 100%), linear-gradient(0deg, #121212 0%, rgba(18, 18, 18, 0) 30%), url('../images/hero.jpg?v=3') center / cover #121212; color: #fff; margin-top: calc(var(--hd) * -1); padding: calc(var(--hd) + clamp(56px, 9vw, 120px)) 0 0; overflow: hidden; }
 .hero h1 { font-size: clamp(64px, 15.5vw, 236px); text-transform: uppercase; }
 .hero h1 span { color: var(--accent); }
 .hero-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin-top: clamp(28px, 4vw, 56px); padding-bottom: clamp(48px, 7vw, 96px); }
@@ -195,7 +195,7 @@ body.lock .hd .burger i { background: var(--ink) !important; }
 .page-hero p { color: var(--mute); margin-top: 14px; font-size: 17px; }
 .page-hero .banner {
   margin-top: clamp(28px, 4vw, 52px); height: clamp(200px, 32vw, 420px); border-radius: 28px;
-  background: linear-gradient(rgba(18, 18, 18, .35), rgba(18, 18, 18, .35)), url('../images/banner.jpg') center / cover #121212;
+  background: linear-gradient(rgba(18, 18, 18, .35), rgba(18, 18, 18, .35)), url('../images/banner.jpg?v=2') center / cover #121212;
   display: grid; place-items: center; overflow: hidden; color: rgba(255, 255, 255, .9);
   font-family: var(--en); font-weight: 900; font-stretch: 120%; font-size: clamp(40px, 11.5vw, 165px); white-space: nowrap; line-height: 1;
 }
