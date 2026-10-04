@@ -94,7 +94,7 @@
       <span class="tag">${PLATFORMS[f.p]}</span>
       <strong>${esc(f.name)}</strong>
       <dl><div><dt>규모</dt><dd>${esc(f.scale)}</dd></div><div><dt>콘텐츠</dt><dd>${esc(f.content)}</dd></div></dl>
-      <a class="link" href="contact.html?target=${encodeURIComponent(f.name)}">섭외 문의 →</a>
+      <a class="link" href="contact.html?target=${encodeURIComponent(`${PLATFORMS[f.p]} 인플루언서 · ${f.name}`)}">섭외 문의 →</a>
     </article>`;
 
   const workCard = (w, i) => `
@@ -130,7 +130,7 @@
               <div><dt>WORK</dt><dd>${esc(m.use)}</dd></div>
             </dl>
             <p>모델 프로필은 문의 시 조건에 맞춰 컴카드(Comp Card) 리스트로 제안드립니다.</p>
-            <a class="btn" href="contact.html?target=${encodeURIComponent(m.name)}">이 라인업으로 문의 →</a>
+            <a class="btn" href="contact.html?target=${encodeURIComponent(`${GENDERS[m.g]} · ${MODEL_CATS[m.c]} · ${m.name}`)}">이 라인업으로 문의 →</a>
           </div>
         </div>`;
       dlg.showModal();

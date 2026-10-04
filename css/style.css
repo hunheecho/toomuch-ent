@@ -310,7 +310,8 @@ dialog::backdrop { background: rgba(0, 0, 0, .6); }
   .i-card dd { text-align: left; }
   .m-card .ph em, .w-card .ph em { font-size: 14px; }
   .m-meta { flex-direction: column; gap: 0; }
-  .about-intro, .svc, .ask, .values,   .svc:nth-child(even) .ph { order: 0; }
+  .about-intro, .svc, .ask, .values { grid-template-columns: 1fr; }
+  .svc:nth-child(even) .ph { order: 0; }
   .steps { grid-template-columns: 1fr 1fr; }
   .partners { grid-template-columns: repeat(3, 1fr); }
   form.ask-form { grid-template-columns: 1fr; }
