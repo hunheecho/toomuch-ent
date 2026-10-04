@@ -69,7 +69,7 @@ const WORK_CATS = { ad: '광고 · 화보', sns: 'SNS 캠페인', event: '팝업
    ------------------------------------------------------------ */
 // 분위기컷 파일명 규칙: images/{f|m|x(키즈)|i|w}-{영문 태그 소문자}.jpg
 const slug = (s) => s.toLowerCase().replace(/[^a-z]/g, '');
-const M = (g, c, name, en, age, use, featured) => ({ g, c, name, en, age, use, img: `images/${c === 'kids' ? 'x' : g}-${slug(en)}.jpg?v=5`, featured: !!featured });
+const M = (g, c, name, en, age, use, featured) => ({ g, c, name, en, age, use, img: `images/${c === 'kids' ? 'x' : g}-${slug(en)}.jpg?v=6`, featured: !!featured });
 const MODELS = [
   M('f', 'domestic', '뷰티 · 스킨케어', 'BEAUTY', '20–30대', '화장품 광고, 상세페이지, 뷰티 화보', 1),
   M('f', 'domestic', '패션 · 룩북', 'FASHION', '20–30대', '시즌 룩북, 브랜드 화보, 캠페인', 1),
